@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>200G流量卡 限时0元领</title>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/axios.min.js"></script>   
+    <script type="text/javascript" src="js/distpicker.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+    <script type="text/javascript">
+        
+    </script>
+    <div class="container-fluid" >
+        <img src="images/poster_sm_2.jpg" class="card-img-top" id="poster">
+        <img src="images/idt_sm_2.jpg" style="margin-top:3px" class="card-img-top">
+    </div>
+    <div class="container border border-secondary">
+        <h6 class="text-center text-dark font-weight-bold" style="padding-top:5px">申领流量卡<span class="badge badge-pill badge-primary">包邮到家</span></h6>
+        <!-- <form action="http://192.168.0.106:3000/api-user-info" method="post"> -->
+        <!-- server.js侦听8081端口 -->
+        <form name = "cust-info-form" onsubmit="return validate_form(this)" action="http://192.168.0.106:8081/api-user-info" method="post">
+            <div class="form-group">
+                <label for="name">姓名</label>
+                <input type="text" class="form-control" name="cust_name" id="custName" value = "" placeholder="请填写真实姓名" required/>
+            </div>
+            <div class="form-group">
+                <label for="IdNumber">身份证</label>
+                <!-- type="tel" 手机端跳出数字键盘 -->
+                <input type="tel" maxlength="18" class="form-control" name="id_num"id="IdNum" placeholder="请填写身份证号" required/>
+            </div>
+            <div class="form-group">
+                <label for="tel">联系电话</label>
+                <input type="tel" maxlength="11" class="form-control" name="tel_num" id="telNum" placeholder="请填写联系电话" required/>
+            </div>
+
+            <div class="form-group">
+                <label for="address">收货地址</label>
+                <div data-toggle="distpicker" id="address">
+                    <select name="pvc" data-province="---选择省---" required></select>
+                    <select name="ct" data-city="---选择市---" required></select>
+                    <select name="dst" data-district="---选择区---" required></select>
+                    <input type="text" class="form-control" name="dtl_address" id="detailed-add" placeholder="请填写所在街道以及具体地址" required/>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-md btn-block">立即领取</button>
+        </form>
+        <br>
+    </div>
+</body>
+</html>

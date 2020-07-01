@@ -1,0 +1,44 @@
+{
+  "api-user-info": [
+    {
+      "cust_name": "qian",
+      "id_num": "610303",
+      "tel_num": "18705169597",
+      "pvc": "",
+      "ct": "",
+      "dst": "",
+      "dtl-address": "103",
+      "id": 1
+    },
+    {
+      "cust_name": "qian",
+      "id_num": "610303",
+      "tel_num": "18705169597",
+      "pvc": "",
+      "ct": "",
+      "dst": "",
+      "dtl-address": "103",
+      "id": 2
+    },
+    {
+      "cust_name": "tang",
+      "id_num": "sss",
+      "tel_num": "sss",
+      "pvc": "天津市",
+      "ct": "天津城区",
+      "dst": "和平区",
+      "dtl-address": "sss",
+      "id": 3
+    },
+    {
+      "cust_name": "杨雪",
+      "id_num": "622630199212071522",
+      "tel_num": "183935611673",
+      "pvc": "湖南省",
+      "ct": "株洲市",
+      "dst": "芦淞区",
+      "dtl-address": "103",
+      "id": 4
+    }
+  ]
+}
